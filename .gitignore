@@ -6,6 +6,8 @@
 /demo/hooks/
 node_modules/
 .settings/
+publish/src
+publish/package
 
 .DS_Store
 *.js.map
