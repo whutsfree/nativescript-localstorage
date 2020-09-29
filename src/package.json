@@ -1,63 +1,66 @@
 {
-    "name": "nativescript-localstorage-wf",
-    "version": "2.0.1",
-    "description": "LocalStorage/SessionStorage API",
-    "main": "localstorage",
-    "nativescript": {
-        "platforms": {
-            "android": "1.0.0",
-            "ios": "1.0.0"
-        },
-	  "plugin": {
-		"nan": "true",
-		"pan": "true",
-		"core3": "true",
-		"category": "Processing"
-	  }
+  "name": "nativescript-localstorage-wf",
+  "version": "3.0.0",
+  "description": "LocalStorage/SessionStorage API",
+  "main": "localstorage",
+  "nativescript": {
+    "platforms": {
+      "android": "7.0.0",
+      "ios": "7.0.0"
     },
+    "plugin": {
+      "nan": "true",
+      "pan": "true",
+      "core3": "true",
+      "category": "Processing"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/whutsfree/nativescript-localstorage"
   },
-    "keywords": [
-        "NativeScript",
-        "local storage",
-        "localstorage",
-        "session storage",
-        "sessionstorage",
-        "nativescript",
-        "data",
-        "storage"
-    ],
-    "author": {
-        "name": "Nathanael Anderson",
-        "email": "nathan@master-technology.com"
-    },
-	"contributors": [
+  "keywords": [
+    "NativeScript",
+    "local storage",
+    "localstorage",
+    "session storage",
+    "sessionstorage",
+    "nativescript",
+    "data",
+    "storage"
+  ],
+  "author": {
+    "name": "Nathanael Anderson",
+    "email": "nathan@master-technology.com"
+  },
+  "contributors": [
     {
       "name": "Stanimira Vlaeva",
       "email": "stanimira.vlaeva@gmail.com",
       "url": "https://github.com/sis0k0"
     },
-	{
+    {
       "name": "Daniel Kucal",
       "email": "dkucal@gmail.com",
       "url": "https://github.com/danielkucal"
     }
-	],
-    "license": "Unsupported",
-    "bugs": {
-        "url": "https://git.proplugins.org/proplugins/nativescript-localstorage/issues"
-    },
-    "homepage": "https://git.proplugins.org/proplugins/nativescript-localstorage",
-    "readmeFilename": "README.md",
-    "scripts": {
-        "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
-        "demo.android": "npm run preparedemo && cd demo && tns run android",
-        "debug.ios": "npm run preparedemo && cd demo && tns debug ios --emulator",
-        "debug.android": "npm run preparedemo && cd demo && tns debug android --emulator",
-        "preparedemo": "cd demo && tns plugin remove nativescript-localstorage && tns plugin add .. && tns install",
-        "setup": "cd demo && npm install && tns plugin add .. && cd ..",
-        "start": "npm run demo.android"
-    }
+  ],
+  "license": "Unsupported",
+  "bugs": {
+    "url": "https://git.proplugins.org/proplugins/nativescript-localstorage/issues"
+  },
+  "homepage": "https://git.proplugins.org/proplugins/nativescript-localstorage",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "setup": "npm i && ts-patch install",
+    "start": "npm run demo.android"
+  },
+  "devDependencies": {
+    "@nativescript/core": "~7.0.0",
+    "@nativescript/android": "~7.0.0",
+    "@nativescript/ios": "~7.0.0",
+    "@nativescript/types": "~7.0.0",
+    "typescript": "~3.9.0",
+    "@types/node": "~14.11.2"
+  }
 }
