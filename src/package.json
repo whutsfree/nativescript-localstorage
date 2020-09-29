@@ -55,6 +55,14 @@
     "setup": "npm i && ts-patch install",
     "start": "npm run demo.android"
   },
+  "compilerOptions": {
+    "plugins": [
+      {
+        "transform": "@nativescript/webpack/transformers/ns-transform-native-classes",
+        "type": "raw"
+      }
+    ]
+  },
   "devDependencies": {
     "@nativescript/core": "~7.0.0",
     "@nativescript/android": "~7.0.0",
