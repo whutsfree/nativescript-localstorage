@@ -52,8 +52,7 @@
   "homepage": "https://git.proplugins.org/proplugins/nativescript-localstorage",
   "readmeFilename": "README.md",
   "scripts": {
-    "setup": "npm i && ts-patch install",
-    "start": "npm run demo.android"
+    "setup": "npm i && ts-patch install"
   },
   "compilerOptions": {
     "plugins": [
